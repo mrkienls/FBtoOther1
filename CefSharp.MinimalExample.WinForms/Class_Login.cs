@@ -41,7 +41,7 @@ namespace CefSharp.MinimalExample.WinForms
 
 
             //2. Check URLs
-            CheckUrls(URLs);
+            if (URLs!="0") CheckUrls(URLs);
 
             //3. Check Version
             string old_version = Properties.Settings.Default.version ;
