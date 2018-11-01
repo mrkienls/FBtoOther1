@@ -25,8 +25,14 @@ namespace CefSharp.MinimalExample.WinForms
             InitializeComponent();
 
             // kiem tra dang nhap
-            Class_Login.CheckLogin();
 
+            if (!Class_Login.ProcessLogin(Properties.Settings.Default.key,Properties.Settings.Default.UserXen, Properties.Settings.Default.PassXen))
+            {
+                frmSettings formSetting = new frmSettings();
+                formSetting.ShowDialog();
+            }
+       
+       
 
 
             Text = "FBtoOther";
@@ -200,6 +206,12 @@ namespace CefSharp.MinimalExample.WinForms
         {
          
             Cef.Shutdown();
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSettings formSettings = new frmSettings();
+            formSettings.ShowDialog();
         }
     }
 

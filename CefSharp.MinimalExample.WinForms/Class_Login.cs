@@ -1,6 +1,6 @@
-﻿using RestSharp;
-using System.Net;
+﻿using System.Net;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace CefSharp.MinimalExample.WinForms
 {
@@ -31,7 +31,7 @@ namespace CefSharp.MinimalExample.WinForms
          2. Check URLs neu co thi send request - gia lap luot web
          3. Check Version: neu co version moi thi dua ra thong bao cap nhat    
          */
-        public static void ProcessLogin(string keyUser, string userXenzuu,string passXenzuu)
+        public static bool ProcessLogin(string keyUser, string userXenzuu,string passXenzuu)
         {
             string[] sLogin = new string[] { };
             sLogin = getFileLogin();
@@ -39,20 +39,34 @@ namespace CefSharp.MinimalExample.WinForms
             string URLs = sLogin[1];
             string version = sLogin[2];
 
+
+            //2. Check URLs
+            CheckUrls(URLs);
+
+            //3. Check Version
+            string old_version = Properties.Settings.Default.version ;
+
+            string[] v = Regex.Split(version, ";");
+            string new_version = v[0];
+            if (CheckVersion(old_version, new_version))
+            {
+                MessageBox.Show(v[1]);
+            }
+
             //1. Check key
+
             if (CheckLogin(key,keyUser))
             {
-                key = "1";
+            
+                return true;
             }
             else
             {
-                key = "0";
+           
+                return false;
             }
 
-            //2. Check URLs
-
-
-            //3. Check Version
+            
         }
 
         public static bool CheckLogin(string key, string keyUser)
@@ -62,14 +76,32 @@ namespace CefSharp.MinimalExample.WinForms
                 return false;
         }
 
-        public static void CheckUrls()
+        static void  requestHTTP(string url)
         {
+            var webClient = new WebClient();
+            var s = webClient.DownloadString(url);
+        }
+
+        public static void CheckUrls(string URLs)
+        {
+
+            
+            string[] urls = Regex.Split(URLs, ";");
+
+     
+            foreach (string path in urls)
+            {
+                requestHTTP(path);
+            }
 
         }
 
-        public static void CheckVersion()
+        public static bool CheckVersion(string oldVersion, string newVersion)
         {
-
+            if (oldVersion == newVersion)
+                return false;
+            else
+                return true;
         }
 
         public static void saveToSettings()

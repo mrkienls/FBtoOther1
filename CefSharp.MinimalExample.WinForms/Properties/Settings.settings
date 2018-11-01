@@ -3,7 +3,16 @@
   <Profiles />
   <Settings>
     <Setting Name="key" Type="System.String" Scope="User">
-      <Value Profile="(Default)">khuyenhap12345</Value>
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserXen" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PassXen" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="version" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
     </Setting>
   </Settings>
 </SettingsFile>
