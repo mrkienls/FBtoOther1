@@ -36,7 +36,7 @@ namespace CefSharp.MinimalExample.WinForms
 
             if ( content!= "" && haveImage!=99)
             {
-                class_Post2Xenz.post_xenzu(content, path_image, "nguyenthuylinhls", "cstd1234");
+               class_Post2Xenz.post_xenzu(content, path_image, Properties.Settings.Default.UserXen, Properties.Settings.Default.PassXen);
                 content = "";
                 path_image = "";
                 haveImage = 99;
