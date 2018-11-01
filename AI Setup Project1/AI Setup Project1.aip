@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="15.4.1" version="15.4.1" Modules="simple" RootPath="." Language="en" Id="{5A6A9D08-7BB0-41FD-9FB3-FFC131D303E6}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;DigCertStoreComponent;MsiAssemblyComponent;MsiClassComponent;MsiServInstComponent;MsiExtComponent;TilesComponent;MsiOrgComponent;MsiThemeComponent;BackgroundImagesComponent;UpdaterComponent;SerValComponent;MsiInstExSeqComponent;DictionaryComponent;MsiAppSearchComponent;MsiOdbcDataSrcComponent;CPLAppletComponent;ActSyncAppComponent;PreReqComponent;WebApplicationsComponent;MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_libEGL.dll" Value="libEGL.dll"/>
+    <ROW Property="AI_PROPPATH_PERBUILD_libGLESv2.dll" Value="libGLESv2.dll"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="FBKIEN"/>
+    <ROW Property="ProductCode" Value="1033:{EF9E1C53-D7C8-4834-8084-C09AAED7BDAD} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="FB"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{0C70DC6A-85DD-457D-815E-406BECFB22C7}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="CefSharp.BrowserSubprocess.Core.dll" ComponentId="{095CEFA8-86E9-434C-9CBA-EEC5B000DDB2}" Directory_="APPDIR" Attributes="0" KeyPath="CefSharp.BrowserSubprocess.Core.dll"/>
+    <ROW Component="CefSharp.BrowserSubprocess.exe" ComponentId="{ED6A7767-7750-4E29-AC4D-5466615793AE}" Directory_="APPDIR" Attributes="0" KeyPath="CefSharp.BrowserSubprocess.exe"/>
+    <ROW Component="CefSharp.Core.dll" ComponentId="{AF154317-D2A4-4DA6-8376-A79ADDB2B405}" Directory_="APPDIR" Attributes="0" KeyPath="CefSharp.Core.dll"/>
+    <ROW Component="CefSharp.MinimalExample.WinForms.exe" ComponentId="{FD2FB85A-F769-467C-84F9-7C269728E9A1}" Directory_="APPDIR" Attributes="0" KeyPath="CefSharp.MinimalExample.WinForms.exe"/>
+    <ROW Component="CefSharp.WinForms.dll" ComponentId="{10E6E059-31BE-4BB6-B13D-B82BC3E24BD5}" Directory_="APPDIR" Attributes="0" KeyPath="CefSharp.WinForms.dll"/>
+    <ROW Component="CefSharp.dll" ComponentId="{0994DE5B-F4FE-4846-8A7B-A79667F62106}" Directory_="APPDIR" Attributes="0" KeyPath="CefSharp.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{DE430D5F-5868-4CB3-ABD2-0EC22D68AC76}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="RestSharp.dll" ComponentId="{565DF473-CCEE-410C-92E8-098F597542C5}" Directory_="APPDIR" Attributes="0" KeyPath="RestSharp.dll"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{2F38D4AC-7CA3-4219-A9DB-2B9ED74030BC}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="System.Core.dll" ComponentId="{92FE7771-5C80-4D7E-823F-332F84ABC3E8}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.Data.dll" ComponentId="{737DD5A0-4406-4826-82CC-C5DC82DF2253}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
+    <ROW Component="System.Drawing.dll" ComponentId="{3E979C95-45DF-4D86-9D90-5877779B4B68}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.dll"/>
+    <ROW Component="System.Web.dll" ComponentId="{DC701158-4776-49B7-91C6-431D0D381B26}" Directory_="APPDIR" Attributes="0" KeyPath="System.Web.dll"/>
+    <ROW Component="System.Windows.Forms.dll" ComponentId="{C2A77CAD-8BB9-40EB-828A-A00C2BB9B8FA}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Forms.dll"/>
+    <ROW Component="System.Xml.dll" ComponentId="{774B0855-AAB6-4A82-A936-C3C470BD9DEA}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
+    <ROW Component="System.dll" ComponentId="{96009FF3-47EF-406C-A56E-D1EE3319428A}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="chrome_elf.dll" ComponentId="{C69E4189-7436-42AB-9D83-7B0EF7115DCB}" Directory_="APPDIR" Attributes="0" KeyPath="chrome_elf.dll"/>
+    <ROW Component="d3dcompiler_47.dll" ComponentId="{A7B557C4-5F53-4B97-B423-662800D44653}" Directory_="APPDIR" Attributes="0" KeyPath="d3dcompiler_47.dll"/>
+    <ROW Component="libEGL.dll" ComponentId="{640CFFAB-61BC-4DC6-A5F2-DCC25683202A}" Directory_="APPDIR" Attributes="0" KeyPath="libEGL.dll"/>
+    <ROW Component="libGLESv2.dll" ComponentId="{DB17C989-0D05-4F45-8BAE-4BBC567E26CB}" Directory_="APPDIR" Attributes="0" KeyPath="libGLESv2.dll"/>
+    <ROW Component="libcef.dll" ComponentId="{B8CD34E2-7DCF-42CD-BEAA-92E6C037B2EA}" Directory_="APPDIR" Attributes="0" KeyPath="libcef.dll"/>
+    <ROW Component="mscorlib.dll" ComponentId="{8BD19DB2-A7D8-4FEA-AA7F-EEF66A28F1FC}" Directory_="APPDIR" Attributes="0" KeyPath="mscorlib.dll"/>
+    <ROW Component="sw.pak" ComponentId="{EB56BDA4-59BB-4184-AAB9-F5FFB9167F6D}" Directory_="APPDIR" Attributes="0" KeyPath="sw.pak" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="CefSharp.BrowserSubprocess.Core.dll CefSharp.BrowserSubprocess.exe CefSharp.Core.dll CefSharp.MinimalExample.WinForms.exe CefSharp.WinForms.dll CefSharp.dll ProductInformation RestSharp.dll SHORTCUTDIR System.Core.dll System.Data.dll System.Drawing.dll System.Web.dll System.Windows.Forms.dll System.Xml.dll System.dll chrome_elf.dll d3dcompiler_47.dll libEGL.dll libGLESv2.dll libcef.dll mscorlib.dll sw.pak"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="CefSharp.BrowserSubprocess.Core.dll" Component_="CefSharp.BrowserSubprocess.Core.dll" FileName="CEFSHA~1.DLL|CefSharp.BrowserSubprocess.Core.dll" Attributes="0" SourcePath="CefSharp.BrowserSubprocess.Core.dll" SelfReg="false" NextFile="CefSharp.BrowserSubprocess.Core.pdb"/>
+    <ROW File="CefSharp.BrowserSubprocess.Core.pdb" Component_="CefSharp.BrowserSubprocess.Core.dll" FileName="CEFSHA~1.PDB|CefSharp.BrowserSubprocess.Core.pdb" Attributes="0" SourcePath="CefSharp.BrowserSubprocess.Core.pdb" SelfReg="false" NextFile="CefSharp.BrowserSubprocess.exe"/>
+    <ROW File="CefSharp.BrowserSubprocess.exe" Component_="CefSharp.BrowserSubprocess.exe" FileName="CEFSHA~2.EXE|CefSharp.BrowserSubprocess.exe" Attributes="0" SourcePath="CefSharp.BrowserSubprocess.exe" SelfReg="false" NextFile="CefSharp.BrowserSubprocess.pdb" DigSign="true"/>
+    <ROW File="CefSharp.BrowserSubprocess.pdb" Component_="CefSharp.BrowserSubprocess.exe" FileName="CEFSHA~2.PDB|CefSharp.BrowserSubprocess.pdb" Attributes="0" SourcePath="CefSharp.BrowserSubprocess.pdb" SelfReg="false" NextFile="CefSharp.Core.dll"/>
+    <ROW File="CefSharp.Core.dll" Component_="CefSharp.Core.dll" FileName="CEFSHA~2.DLL|CefSharp.Core.dll" Attributes="0" SourcePath="..\packages\CefSharp.Common.67.0.0\build\..\CefSharp\x86\CefSharp.Core.dll" SelfReg="false" NextFile="CefSharp.Core.pdb"/>
+    <ROW File="CefSharp.Core.pdb" Component_="CefSharp.Core.dll" FileName="CEFSHA~3.PDB|CefSharp.Core.pdb" Attributes="0" SourcePath="CefSharp.Core.pdb" SelfReg="false" NextFile="CefSharp.Core.xml"/>
+    <ROW File="CefSharp.Core.xml" Component_="sw.pak" FileName="CEFSHA~2.XML|CefSharp.Core.xml" Attributes="0" SourcePath="CefSharp.Core.xml" SelfReg="false" NextFile="CefSharp.pdb"/>
+    <ROW File="CefSharp.MinimalExample.WinForms.exe" Component_="CefSharp.MinimalExample.WinForms.exe" FileName="CEFSHA~1.EXE|CefSharp.MinimalExample.WinForms.exe" Attributes="0" SourcePath="..\CefSharp.MinimalExample.WinForms\bin\x86\Release\CefSharp.MinimalExample.WinForms.exe" SelfReg="false" NextFile="pl.pak" DigSign="true"/>
+    <ROW File="CefSharp.MinimalExample.WinForms.exe.config" Component_="sw.pak" FileName="CEFSHA~1.CON|CefSharp.MinimalExample.WinForms.exe.config" Attributes="0" SourcePath="..\CefSharp.MinimalExample.WinForms\bin\x86\Release\CefSharp.MinimalExample.WinForms.exe.config" SelfReg="false" NextFile="devtools_resources.pak"/>
+    <ROW File="CefSharp.WinForms.XML" Component_="sw.pak" FileName="CEFSHA~1.XML|CefSharp.WinForms.XML" Attributes="0" SourcePath="CefSharp.WinForms.XML" SelfReg="false" NextFile="libGLESv2.dll"/>
+    <ROW File="CefSharp.WinForms.dll" Component_="CefSharp.WinForms.dll" FileName="CEFSHA~3.DLL|CefSharp.WinForms.dll" Attributes="0" SourcePath="..\packages\CefSharp.WinForms.67.0.0\build\..\CefSharp\x86\CefSharp.WinForms.dll" SelfReg="false" NextFile="CefSharp.WinForms.pdb"/>
+    <ROW File="CefSharp.WinForms.pdb" Component_="CefSharp.WinForms.dll" FileName="CEFSHA~4.PDB|CefSharp.WinForms.pdb" Attributes="0" SourcePath="CefSharp.WinForms.pdb" SelfReg="false" NextFile="mscorlib.dll"/>
+    <ROW File="CefSharp.XML" Component_="sw.pak" FileName="CefSharp.XML" Attributes="0" SourcePath="CefSharp.XML" SelfReg="false" NextFile="CefSharp.WinForms.dll"/>
+    <ROW File="CefSharp.dll" Component_="CefSharp.dll" FileName="CefSharp.dll" Attributes="0" SourcePath="CefSharp.dll" SelfReg="false" NextFile="bn.pak"/>
+    <ROW File="CefSharp.pdb" Component_="CefSharp.dll" FileName="CefSharp.pdb" Attributes="0" SourcePath="CefSharp.pdb" SelfReg="false" NextFile="CefSharp.XML"/>
+    <ROW File="RestSharp.dll" Component_="RestSharp.dll" FileName="RESTSH~1.DLL|RestSharp.dll" Attributes="0" SourcePath="..\packages\RestSharp.106.5.4\lib\net452\RestSharp.dll" SelfReg="false" NextFile="System.Core.dll"/>
+    <ROW File="System.Core.dll" Component_="System.Core.dll" FileName="SYSTEM~2.DLL|System.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" SelfReg="false" NextFile="System.Data.dll"/>
+    <ROW File="System.Data.dll" Component_="System.Data.dll" FileName="SYSTEM~3.DLL|System.Data.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" SelfReg="false" NextFile="System.dll"/>
+    <ROW File="System.Drawing.dll" Component_="System.Drawing.dll" FileName="SYSTEM~4.DLL|System.Drawing.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Drawing.dll" SelfReg="false" NextFile="System.Web.dll"/>
+    <ROW File="System.Web.dll" Component_="System.Web.dll" FileName="SYSTEM~5.DLL|System.Web.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Web.dll" SelfReg="false" NextFile="System.Windows.Forms.dll"/>
+    <ROW File="System.Windows.Forms.dll" Component_="System.Windows.Forms.dll" FileName="SYSTEM~6.DLL|System.Windows.Forms.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="System.Xml.dll" Component_="System.Xml.dll" FileName="SYSTEM~1.DLL|System.Xml.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" SelfReg="false" NextFile="CefSharp.dll"/>
+    <ROW File="System.dll" Component_="System.dll" FileName="System.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" SelfReg="false" NextFile="System.Drawing.dll"/>
+    <ROW File="am.pak" Component_="sw.pak" FileName="am.pak" Attributes="0" SourcePath="locales\am.pak" SelfReg="false" NextFile="ar.pak"/>
+    <ROW File="ar.pak" Component_="sw.pak" FileName="ar.pak" Attributes="0" SourcePath="locales\ar.pak" SelfReg="false" NextFile="ptPT.pak"/>
+    <ROW File="bg.pak" Component_="sw.pak" FileName="bg.pak" Attributes="0" SourcePath="locales\bg.pak" SelfReg="false" NextFile="ca.pak"/>
+    <ROW File="bn.pak" Component_="sw.pak" FileName="bn.pak" Attributes="0" SourcePath="locales\bn.pak" SelfReg="false" NextFile="sk.pak"/>
+    <ROW File="ca.pak" Component_="sw.pak" FileName="ca.pak" Attributes="0" SourcePath="locales\ca.pak" SelfReg="false" NextFile="lt.pak"/>
+    <ROW File="cef.pak" Component_="sw.pak" FileName="cef.pak" Attributes="0" SourcePath="cef.pak" SelfReg="false" NextFile="CefSharp.MinimalExample.WinForms.exe.config"/>
+    <ROW File="cef_100_percent.pak" Component_="sw.pak" FileName="CEF_10~1.PAK|cef_100_percent.pak" Attributes="0" SourcePath="cef_100_percent.pak" SelfReg="false" NextFile="gu.pak"/>
+    <ROW File="cef_200_percent.pak" Component_="sw.pak" FileName="CEF_20~1.PAK|cef_200_percent.pak" Attributes="0" SourcePath="cef_200_percent.pak" SelfReg="false" NextFile="ro.pak"/>
+    <ROW File="cef_extensions.pak" Component_="sw.pak" FileName="CEF_EX~1.PAK|cef_extensions.pak" Attributes="0" SourcePath="cef_extensions.pak" SelfReg="false" NextFile="icudtl.dat"/>
+    <ROW File="chrome_elf.dll" Component_="chrome_elf.dll" FileName="CHROME~1.DLL|chrome_elf.dll" Attributes="0" SourcePath="chrome_elf.dll" SelfReg="false" NextFile="cef.pak"/>
+    <ROW File="cs.pak" Component_="sw.pak" FileName="cs.pak" Attributes="0" SourcePath="locales\cs.pak" SelfReg="false" NextFile="id.pak"/>
+    <ROW File="d3dcompiler_47.dll" Component_="d3dcompiler_47.dll" FileName="D3DCOM~1.DLL|d3dcompiler_47.dll" Attributes="0" SourcePath="d3dcompiler_47.dll" SelfReg="false" NextFile="hr.pak"/>
+    <ROW File="da.pak" Component_="sw.pak" FileName="da.pak" Attributes="0" SourcePath="locales\da.pak" SelfReg="false" NextFile="de.pak"/>
+    <ROW File="de.pak" Component_="sw.pak" FileName="de.pak" Attributes="0" SourcePath="locales\de.pak" SelfReg="false" NextFile="el.pak"/>
+    <ROW File="devtools_resources.pak" Component_="sw.pak" FileName="DEVTOO~1.PAK|devtools_resources.pak" Attributes="0" SourcePath="devtools_resources.pak" SelfReg="false" NextFile="nl.pak"/>
+    <ROW File="el.pak" Component_="sw.pak" FileName="el.pak" Attributes="0" SourcePath="locales\el.pak" SelfReg="false" NextFile="fil.pak"/>
+    <ROW File="enGB.pak" Component_="sw.pak" FileName="en-GB.pak" Attributes="0" SourcePath="locales\en-GB.pak" SelfReg="false" NextFile="enUS.pak"/>
+    <ROW File="enUS.pak" Component_="sw.pak" FileName="en-US.pak" Attributes="0" SourcePath="locales\en-US.pak" SelfReg="false" NextFile="vi.pak"/>
+    <ROW File="es.pak" Component_="sw.pak" FileName="es.pak" Attributes="0" SourcePath="locales\es.pak" SelfReg="false" NextFile="ru.pak"/>
+    <ROW File="es419.pak" Component_="sw.pak" FileName="es-419.pak" Attributes="0" SourcePath="locales\es-419.pak" SelfReg="false" NextFile="es.pak"/>
+    <ROW File="et.pak" Component_="sw.pak" FileName="et.pak" Attributes="0" SourcePath="locales\et.pak" SelfReg="false" NextFile="libEGL.dll"/>
+    <ROW File="fa.pak" Component_="sw.pak" FileName="fa.pak" Attributes="0" SourcePath="locales\fa.pak" SelfReg="false" NextFile="fi.pak"/>
+    <ROW File="fi.pak" Component_="sw.pak" FileName="fi.pak" Attributes="0" SourcePath="locales\fi.pak" SelfReg="false" NextFile="sv.pak"/>
+    <ROW File="fil.pak" Component_="sw.pak" FileName="fil.pak" Attributes="0" SourcePath="locales\fil.pak" SelfReg="false" NextFile="enGB.pak"/>
+    <ROW File="fr.pak" Component_="sw.pak" FileName="fr.pak" Attributes="0" SourcePath="locales\fr.pak" SelfReg="false" NextFile="am.pak"/>
+    <ROW File="gu.pak" Component_="sw.pak" FileName="gu.pak" Attributes="0" SourcePath="locales\gu.pak" SelfReg="false" NextFile="ml.pak"/>
+    <ROW File="he.pak" Component_="sw.pak" FileName="he.pak" Attributes="0" SourcePath="locales\he.pak" SelfReg="false" NextFile="hi.pak"/>
+    <ROW File="hi.pak" Component_="sw.pak" FileName="hi.pak" Attributes="0" SourcePath="locales\hi.pak" SelfReg="false" NextFile="hu.pak"/>
+    <ROW File="hr.pak" Component_="sw.pak" FileName="hr.pak" Attributes="0" SourcePath="locales\hr.pak" SelfReg="false" NextFile="cef_100_percent.pak"/>
+    <ROW File="hu.pak" Component_="sw.pak" FileName="hu.pak" Attributes="0" SourcePath="locales\hu.pak" SelfReg="false" NextFile="it.pak"/>
+    <ROW File="icudtl.dat" Component_="sw.pak" FileName="icudtl.dat" Attributes="0" SourcePath="icudtl.dat" SelfReg="false" NextFile="sr.pak"/>
+    <ROW File="id.pak" Component_="sw.pak" FileName="id.pak" Attributes="0" SourcePath="locales\id.pak" SelfReg="false" NextFile="da.pak"/>
+    <ROW File="it.pak" Component_="sw.pak" FileName="it.pak" Attributes="0" SourcePath="locales\it.pak" SelfReg="false" NextFile="ta.pak"/>
+    <ROW File="ja.pak" Component_="sw.pak" FileName="ja.pak" Attributes="0" SourcePath="locales\ja.pak" SelfReg="false" NextFile="kn.pak"/>
+    <ROW File="kn.pak" Component_="sw.pak" FileName="kn.pak" Attributes="0" SourcePath="locales\kn.pak" SelfReg="false" NextFile="th.pak"/>
+    <ROW File="ko.pak" Component_="sw.pak" FileName="ko.pak" Attributes="0" SourcePath="locales\ko.pak" SelfReg="false" NextFile="lv.pak"/>
+    <ROW File="libEGL.dll" Component_="libEGL.dll" FileName="libEGL.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libEGL.dll&gt;" SelfReg="false" NextFile="mr.pak"/>
+    <ROW File="libGLESv2.dll" Component_="libGLESv2.dll" FileName="LIBGLE~1.DLL|libGLESv2.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libGLESv2.dll&gt;" SelfReg="false" NextFile="fr.pak"/>
+    <ROW File="libcef.dll" Component_="libcef.dll" FileName="libcef.dll" Attributes="0" SourcePath="libcef.dll" SelfReg="false" NextFile="et.pak"/>
+    <ROW File="lt.pak" Component_="sw.pak" FileName="lt.pak" Attributes="0" SourcePath="locales\lt.pak" SelfReg="false" NextFile="cs.pak"/>
+    <ROW File="lv.pak" Component_="sw.pak" FileName="lv.pak" Attributes="0" SourcePath="locales\lv.pak" SelfReg="false" NextFile="uk.pak"/>
+    <ROW File="ml.pak" Component_="sw.pak" FileName="ml.pak" Attributes="0" SourcePath="locales\ml.pak" SelfReg="false" NextFile="cef_200_percent.pak"/>
+    <ROW File="mr.pak" Component_="sw.pak" FileName="mr.pak" Attributes="0" SourcePath="locales\mr.pak" SelfReg="false" NextFile="CefSharp.WinForms.XML"/>
+    <ROW File="ms.pak" Component_="sw.pak" FileName="ms.pak" Attributes="0" SourcePath="locales\ms.pak" SelfReg="false" NextFile="nb.pak"/>
+    <ROW File="mscorlib.dll" Component_="mscorlib.dll" FileName="mscorlib.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" SelfReg="false" NextFile="RestSharp.dll"/>
+    <ROW File="natives_blob.bin" Component_="sw.pak" FileName="NATIVE~1.BIN|natives_blob.bin" Attributes="0" SourcePath="natives_blob.bin" SelfReg="false" NextFile="snapshot_blob.bin"/>
+    <ROW File="nb.pak" Component_="sw.pak" FileName="nb.pak" Attributes="0" SourcePath="locales\nb.pak" SelfReg="false" NextFile="ptBR.pak"/>
+    <ROW File="nl.pak" Component_="sw.pak" FileName="nl.pak" Attributes="0" SourcePath="locales\nl.pak" SelfReg="false" NextFile="d3dcompiler_47.dll"/>
+    <ROW File="pl.pak" Component_="sw.pak" FileName="pl.pak" Attributes="0" SourcePath="locales\pl.pak" SelfReg="false" NextFile="System.Xml.dll"/>
+    <ROW File="ptBR.pak" Component_="sw.pak" FileName="pt-BR.pak" Attributes="0" SourcePath="locales\pt-BR.pak" SelfReg="false" NextFile="te.pak"/>
+    <ROW File="ptPT.pak" Component_="sw.pak" FileName="pt-PT.pak" Attributes="0" SourcePath="locales\pt-PT.pak" SelfReg="false" NextFile="bg.pak"/>
+    <ROW File="ro.pak" Component_="sw.pak" FileName="ro.pak" Attributes="0" SourcePath="locales\ro.pak" SelfReg="false" NextFile="cef_extensions.pak"/>
+    <ROW File="ru.pak" Component_="sw.pak" FileName="ru.pak" Attributes="0" SourcePath="locales\ru.pak" SelfReg="false" NextFile="fa.pak"/>
+    <ROW File="sk.pak" Component_="sw.pak" FileName="sk.pak" Attributes="0" SourcePath="locales\sk.pak" SelfReg="false" NextFile="chrome_elf.dll"/>
+    <ROW File="sl.pak" Component_="sw.pak" FileName="sl.pak" Attributes="0" SourcePath="locales\sl.pak" SelfReg="false" NextFile="tr.pak"/>
+    <ROW File="snapshot_blob.bin" Component_="sw.pak" FileName="SNAPSH~1.BIN|snapshot_blob.bin" Attributes="0" SourcePath="snapshot_blob.bin" SelfReg="false" NextFile="v8_context_snapshot.bin"/>
+    <ROW File="sr.pak" Component_="sw.pak" FileName="sr.pak" Attributes="0" SourcePath="locales\sr.pak" SelfReg="false" NextFile="libcef.dll"/>
+    <ROW File="sv.pak" Component_="sw.pak" FileName="sv.pak" Attributes="0" SourcePath="locales\sv.pak" SelfReg="false" NextFile="he.pak"/>
+    <ROW File="sw.pak" Component_="sw.pak" FileName="sw.pak" Attributes="0" SourcePath="locales\sw.pak" SelfReg="false" NextFile="CefSharp.MinimalExample.WinForms.exe"/>
+    <ROW File="ta.pak" Component_="sw.pak" FileName="ta.pak" Attributes="0" SourcePath="locales\ta.pak" SelfReg="false" NextFile="ja.pak"/>
+    <ROW File="te.pak" Component_="sw.pak" FileName="te.pak" Attributes="0" SourcePath="locales\te.pak" SelfReg="false" NextFile="sl.pak"/>
+    <ROW File="th.pak" Component_="sw.pak" FileName="th.pak" Attributes="0" SourcePath="locales\th.pak" SelfReg="false" NextFile="ko.pak"/>
+    <ROW File="tr.pak" Component_="sw.pak" FileName="tr.pak" Attributes="0" SourcePath="locales\tr.pak" SelfReg="false" NextFile="zhCN.pak"/>
+    <ROW File="uk.pak" Component_="sw.pak" FileName="uk.pak" Attributes="0" SourcePath="locales\uk.pak" SelfReg="false" NextFile="ms.pak"/>
+    <ROW File="v8_context_snapshot.bin" Component_="sw.pak" FileName="V8_CON~1.BIN|v8_context_snapshot.bin" Attributes="0" SourcePath="v8_context_snapshot.bin" SelfReg="false" NextFile="CefSharp.BrowserSubprocess.Core.dll"/>
+    <ROW File="vi.pak" Component_="sw.pak" FileName="vi.pak" Attributes="0" SourcePath="locales\vi.pak" SelfReg="false" NextFile="es419.pak"/>
+    <ROW File="zhCN.pak" Component_="sw.pak" FileName="zh-CN.pak" Attributes="0" SourcePath="locales\zh-CN.pak" SelfReg="false" NextFile="zhTW.pak"/>
+    <ROW File="zhTW.pak" Component_="sw.pak" FileName="zh-TW.pak" Attributes="0" SourcePath="locales\zh-TW.pak" SelfReg="false" NextFile="natives_blob.bin"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_libEGL.dll" Path="[|AI_PROPPATH_PERBUILD_libEGL.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libGLESv2.dll" Path="[|AI_PROPPATH_PERBUILD_libGLESv2.dll]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="C:\Users\data\Documents\Advanced Installer\Projects\FB\Setup Files" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="CefSharp.MinimalExample.WinForms._1" Directory_="DesktopFolder" Name="CEFSHA~1.EXE|CefSharp.MinimalExample.WinForms.exe" Component_="CefSharp.MinimalExample.WinForms.exe" Target="[#CefSharp.MinimalExample.WinForms.exe]" Description="CefSharp.MinimalExample.WinForms.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="CefSharp.MinimalExample.WinForms.ex" Directory_="SHORTCUTDIR" Name="CEFSHA~1.EXE|CefSharp.MinimalExample.WinForms.exe" Component_="CefSharp.MinimalExample.WinForms.exe" Target="[#CefSharp.MinimalExample.WinForms.exe]" Description="CefSharp.MinimalExample.WinForms.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
